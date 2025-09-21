@@ -43,12 +43,14 @@ const App: React.FC = () => {
             </section>
         </main>
         
-        <section className="mt-20 text-center">
-            <h3 className="text-2xl font-bold font-serif text-brand-dark mb-4">Customised Solutions</h3>
-            <p className="text-brand-gray max-w-2xl mx-auto">
-                Not sure which plan fits your exact needs? Let’s sit together and build a custom package tailored to your goals.
-            </p>
-        </section>
+        {activePackageType !== PackageType.SocialMedia && (
+            <section className="mt-20 text-center">
+                <h3 className="text-2xl font-bold font-serif text-brand-dark mb-4">Customised Solutions</h3>
+                <p className="text-brand-gray max-w-2xl mx-auto">
+                    Not sure which plan fits your exact needs? Let’s sit together and build a custom package tailored to your goals.
+                </p>
+            </section>
+        )}
 
         <footer className="mt-16 pt-8 border-t border-slate-200">
             <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-brand-gray space-y-4 sm:space-y-0">
