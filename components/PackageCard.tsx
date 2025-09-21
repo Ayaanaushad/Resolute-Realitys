@@ -50,11 +50,6 @@ const PackageCard: React.FC<PackageCardProps> = ({ packageInfo }) => {
             </div>
         )}
       </div>
-      <div className="mt-8">
-        <button className={`w-full font-semibold py-3 px-6 rounded-lg transition-all duration-300 ${highlight ? 'bg-brand-dark text-white hover:bg-gray-800' : 'bg-white text-brand-dark border-2 border-brand-dark hover:bg-brand-dark hover:text-white'}`}>
-            Choose Plan
-        </button>
-      </div>
     </div>
   );
 };
